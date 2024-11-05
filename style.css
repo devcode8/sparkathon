@@ -1,0 +1,90 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 100px 0;
+  gap: 30px;
+  background-color: #f7f8fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Container to center the cards */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f3f5;
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Hover pop-up animation */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Three dots for each card */
+.card::after {
+  content: "⋮";
+  position: absolute;
+  right: 15px;
+  font-size: 1.5em;
+  color: #888;
+}
+
+/* Powered by section */
+.hr {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  outline: none;
+  border: none;
+}
+.text {
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0%;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  place-items: center;
+}
+.box img {
+  width: 150px;
+  border-radius: 30px;
+  
+}
