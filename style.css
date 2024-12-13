@@ -185,8 +185,13 @@ header {
 
 /* Image styling within the grid */
 .box img {
-  width: 150px;
-  border-radius: 30px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.idealab{
+  width: 50px;
+  height: 100px;
 }
 
 /* Responsive adjustments */
